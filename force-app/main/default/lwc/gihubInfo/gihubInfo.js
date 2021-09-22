@@ -3,7 +3,7 @@ import { LightningElement } from 'lwc';
 const GITHUB_URL = 'https://api.github.com/users/';
 
 export default class GihubInfo extends LightningElement {
-
+    //hello
     username;
     user ={};
 
@@ -28,7 +28,7 @@ export default class GihubInfo extends LightningElement {
             this.user ={};
             fetch(GITHUB_URL + this.username)
             .then(response =>{
-                console.log(response);
+              
                 if(response.ok){
                     return response.json();
 
